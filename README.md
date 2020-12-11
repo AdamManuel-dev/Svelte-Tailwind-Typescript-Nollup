@@ -1,5 +1,10 @@
 # Svelte Template Hot
 
+```bash
+npx degit AdamManuel-dev/Svelte-Tailwind-Typescript-Nollup ./folder
+npx degit AdamManuel-dev/Svelte-Tailwind-Typescript-Nollup#custom-elements ./folder
+```
+
 This is a copy of official [Svelte template](https://github.com/sveltejs/template) with added HMR support. It lives at https://github.com/rixo/svelte-template-hot.
 
 This template aims to remain as close to the official template as possible. Please refer to official docs for general usage. For HMR specific stuff, see bellow.
