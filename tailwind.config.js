@@ -3,7 +3,7 @@ module.exports = {
   purge: [
     "./src/**/*.html",
     "./src/**/*.svelte",
-    "./src/**/*.pcss",
+    "./src/**/*.postcss",
     "./public/**/*.html",
   ],
   darkMode: false, // or 'media' or 'class'

@@ -74,9 +74,13 @@ export default {
       // a separate file - better for performance
       // NOTE when hot option is enabled, a blank file will be written to
       // avoid CSS rules conflicting with HMR injected ones
-      css: (css) => {
-        css.write(isNollup ? 'build/bundle.css' : 'bundle.css');
-      },
+      ...(!isProduction) 
+        ? {
+            css: (css) => {
+              css.write(isNollup ? 'build/bundle.css' : 'bundle.css');
+            },
+          } 
+        : {},
       hot: isHot && {
         // Optimistic will try to recover from runtime
         // errors during component init
